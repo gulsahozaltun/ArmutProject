@@ -3,4 +3,4 @@
 Armut Clone Application
 
 
-![Image of App](https://imgur.com/a/Leseqfp)
+![Image of App](https://imgur.com/glrLUGH)
