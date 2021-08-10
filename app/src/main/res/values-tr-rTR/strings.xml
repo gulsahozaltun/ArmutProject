@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Armut</string>
+    <string name="button_text">Tikla</string>
+    <string name="hello_blank_fragment">Bos fragment</string>
+    <string name="wed_text">540TL DEN BAŞLAYAN DÜĞÜN FOTOĞRAFÇILARI</string>
+    <string name="main_title">Hizment Piş Ağzıma Düş</string>
+    <string name="all_services">Tüm Hizmetler</string>
+    <string name="popular">Son Zamanlarda Popüler</string>
+    <string name="blog">En Güncel Blog Yazıları</string>
+    <string name="discount">İNDİRİM</string>
+    <string name="weds">YENİ EVLENECEKLER İÇİN</string>
+</resources>

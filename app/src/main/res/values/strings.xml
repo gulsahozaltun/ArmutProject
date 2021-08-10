@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Armut</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_text">Click</string>
+    <string name="wed_text">WEDDING PHOTOGRAPHERS FROM 540TL</string>
+    <string name="main_title">Hizmet Piş Ağzıma Düş</string>
+    <string name="all_services">All Services</string>
+    <string name="popular">Popular These Days</string>
+    <string name="blog">Latest From the Blog</string>
+    <string name="discount">DISCOUNT</string>
+    <string name="weds">FIRST TIME NEWLY WEDS</string>
+    <string name="how_it_works">How it works</string>
+    <string name="detail_text1">Answer the questions</string>
+    <string name="detail_text2">Get Quotes</string>
+    <string name="detail_text3">Compare the prices and decide</string>
+    <string name="detail_button">Continue</string>
+
+</resources>
