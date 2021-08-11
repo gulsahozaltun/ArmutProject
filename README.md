@@ -1,6 +1,7 @@
 # ArmutProject
 
 Armut Clone App
+
 Made with Kotlin, based on MVVM architecture(ViewModel,LiveData), Retrofit, Picasso, RecyclerView
 
 
