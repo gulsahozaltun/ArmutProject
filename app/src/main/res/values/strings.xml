@@ -15,5 +15,8 @@
     <string name="detail_text2">Get Quotes</string>
     <string name="detail_text3">Compare the prices and decide</string>
     <string name="detail_button">Continue</string>
+    <string name="average_rating">%1$.1f average rating</string>
+    <string name="completed_jobs">Last month %1$d cleaning jobs completed</string>
+
 
 </resources>

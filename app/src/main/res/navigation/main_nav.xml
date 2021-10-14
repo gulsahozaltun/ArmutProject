@@ -21,6 +21,6 @@
         tools:layout="@layout/fragment_detail_page" >
         <argument
             android:name="allServicesArg"
-            app:argType="com.gulsahozaltun.armutproject.entity.AllServices" />
+            app:argType="com.gulsahozaltun.armutproject.entity.ServiceDetail" />
     </fragment>
 </navigation>

@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import com.gulsahozaltun.armutproject.entity.AllServices
 import com.gulsahozaltun.armutproject.entity.Popular
 import com.gulsahozaltun.armutproject.entity.Posts
+import com.gulsahozaltun.armutproject.repo.GetDataCallback
 import com.gulsahozaltun.armutproject.repo.Repos
 
 class MainPageViewModel:ViewModel() {
@@ -29,6 +30,9 @@ class MainPageViewModel:ViewModel() {
 
     fun loadPosts(){
         repo.getPostst()
+    }
+    fun getService(id : Int, dataCallback: GetDataCallback){
+        repo.getService(id, dataCallback)
     }
 
 

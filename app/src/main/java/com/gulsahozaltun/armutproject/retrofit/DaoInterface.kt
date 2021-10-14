@@ -5,6 +5,7 @@ import retrofit2.http.GET
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.POST
+import retrofit2.http.Path
 
 
 interface DaoInterface {
@@ -17,6 +18,8 @@ interface DaoInterface {
     @GET("home")
     fun postsServices(): Call<PostsAnswer>
 
-    @POST("service")
-    fun getDetail(@Field("id")id:Int):Call<List<DetailEntity>>
+    @GET("service/{id}")
+    fun getService(@Path("id") id: Int): Call<ServiceDetail>
+
+
 }

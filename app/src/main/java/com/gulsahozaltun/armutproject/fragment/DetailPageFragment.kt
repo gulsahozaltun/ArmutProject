@@ -21,15 +21,19 @@ class DetailPageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         tasarim=DataBindingUtil.inflate(inflater,R.layout.fragment_detail_page, container, false)
-        repo= Repos()
-        val bundle:DetailPageFragmentArgs by navArgs()
-        val gelenSonuc=bundle.allServicesArg
-        //repo.getAllDetail(gelenSonuc.id)
-        tasarim.detailObj=gelenSonuc
-        val url=gelenSonuc.image_url
-        Picasso.get().load(url).into(tasarim.imageView3)
+
 
         return tasarim.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        repo= Repos()
+        val bundle:DetailPageFragmentArgs by navArgs()
+        tasarim.detailObj=bundle.allServicesArg
+        val url=bundle.allServicesArg.image_url
+        Picasso.get().load(url).into(tasarim.imageView3)
+
     }
 
 

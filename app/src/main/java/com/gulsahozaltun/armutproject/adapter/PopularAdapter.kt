@@ -11,8 +11,7 @@ import com.gulsahozaltun.armutproject.viewmodel.MainPageViewModel
 import com.squareup.picasso.Picasso
 
 class PopularAdapter(var mContext: Context,
-                     var popularList:List<Popular>,
-                     var viewModel: MainPageViewModel): RecyclerView.Adapter<PopularAdapter.CardTasarimHolder>() {
+                     var popularList:List<Popular>): RecyclerView.Adapter<PopularAdapter.CardTasarimHolder>() {
     inner class CardTasarimHolder(popularCardBinding: PopularCardBinding):RecyclerView.ViewHolder(popularCardBinding.root){
         var cardTasarim: PopularCardBinding
         init {

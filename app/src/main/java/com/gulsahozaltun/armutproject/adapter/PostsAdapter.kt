@@ -19,7 +19,6 @@ import okhttp3.internal.Internal.instance
 
 class PostsAdapter (var mContext: Context,
                         var postsList:List<Posts>,
-                        var viewModel: MainPageViewModel
     ): RecyclerView.Adapter<PostsAdapter.CardTasarimHolder>(){
 
         inner class CardTasarimHolder(blogBinding: BlogCardBinding):RecyclerView.ViewHolder(blogBinding.root){

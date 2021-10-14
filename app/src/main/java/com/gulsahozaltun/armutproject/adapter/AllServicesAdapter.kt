@@ -17,8 +17,8 @@ import com.squareup.picasso.Picasso
 
 class AllServicesAdapter(var mContext:Context,
                          var servicesList:List<AllServices>,
-                         var viewModel: MainPageViewModel,
-                         var imageList:List<ServıcesImage>):RecyclerView.Adapter<AllServicesAdapter.CardTasarimHolder>() {
+                         var imageList:List<ServıcesImage>,
+                         var serviceOnClickListener: ServiceOnClickListener):RecyclerView.Adapter<AllServicesAdapter.CardTasarimHolder>() {
 
     inner class CardTasarimHolder(allServicesBinding:AllServicesCardBinding):RecyclerView.ViewHolder(allServicesBinding.root){
         var cardTasarim:AllServicesCardBinding
@@ -40,8 +40,9 @@ class AllServicesAdapter(var mContext:Context,
         view.serviceObj=obj
 
         view.cardAllServices.setOnClickListener{
-            val gecis=MainPageFragmentDirections.maintoDetail(obj)
-            Navigation.findNavController(it).navigate(gecis)
+            serviceOnClickListener.toServiceDetails(obj)
+            //val gecis=MainPageFragmentDirections.maintoDetail(obj)
+            //Navigation.findNavController(it).navigate(gecis)
 
         }
 
